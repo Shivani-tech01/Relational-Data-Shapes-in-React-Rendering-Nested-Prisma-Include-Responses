@@ -14,14 +14,13 @@ export default function ThreadItem({ thread }) {
 
         <div className="thread-main">
           <h3>{thread.title}</h3>
-          <p className="meta">by {thread.authorName}</p>
+          <p className="meta">by {thread.author?.name || "Anonymous"}</p>
         </div>
 
-        <span className="badge">{thread.commentCount} replies</span>
+        <span className="badge">{thread._count?.comments??0} replies</span>
       </div>
 
       <p>{thread.body}</p>
-      <p className="todo">TODO: Replace flat author fields with nested relation paths.</p>
     </li>
   );
 }

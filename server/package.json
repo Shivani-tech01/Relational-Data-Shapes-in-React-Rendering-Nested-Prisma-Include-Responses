@@ -15,7 +15,8 @@
     "@prisma/client": "^5.22.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.21.0"
+    "express": "^4.21.0",
+    "relational-data-shapes-in-react-starter": "file:.."
   },
   "devDependencies": {
     "prisma": "^5.22.0"
